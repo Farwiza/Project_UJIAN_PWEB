@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import MhsList from './MhsList';
+import MhsCreate from './MhsCreate';
+import MhsDetail from './MhsDetail';
+import MhsEdit from './MhsEdit';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav class="navbar bg-black">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-white">Project Mahasiswa</span>
+          </div>
+      </nav>
+      <BrowserRouter>
+  <Routes>
+    <Route path='/' element ={<MhsList />}></Route>
+    <Route path='/mahasiswa/create' element ={<MhsCreate />}></Route>
+    <Route path='/mahasiswa/detail/:mhsNpm' element ={<MhsDetail />}></Route>
+    <Route path='/mahasiswa/edit/:mhsNpm' element ={<MhsEdit />}></Route>
+    
+  </Routes>
+  </BrowserRouter>
+
     </div>
   );
+  
 }
 
 export default App;

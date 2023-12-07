@@ -13,6 +13,14 @@
   }
 }
 
+.btn {
+  margin : 4px;;
+}
+
+.divbtn {
+  float : left;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +44,5 @@
     transform: rotate(360deg);
   }
 }
+
+

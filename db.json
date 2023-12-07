@@ -1,0 +1,31 @@
+{
+  "mahasiswa": [
+    {
+      "Npm": 50421130,
+      "Nama": "John Doe",
+      "Kelas": "3IA06",
+      "Semester": "5"
+    },
+    {
+      "Npm": "50432121",
+      "Nama": "Alfredo Tanjidor",
+      "Kelas": "3IA05",
+      "Semester": "5",
+      "Active": true
+    },
+    {
+      "Npm": "50421110",
+      "Nama": "Haikal Farwiza",
+      "Kelas": "3IA06",
+      "Semester": "5",
+      "Active": true
+    },
+    {
+      "Npm": "50421120",
+      "Nama": "Alvi Haikal Farwiza",
+      "Kelas": "3IA07",
+      "Semester": "5",
+      "Active": true
+    }
+  ]
+}
